@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mehmet Kaymakcı</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="icon" href="favicon.png">
+    <style>
+        .bg-1
+        {
+            background-color: #1abc9c; /* Green */
+            color: #ffffff;
+        }
+        .bg-2
+        {
+            background-color: #474e5d; /* Dark Blue */
+            color: #ffffff;
+        }
+        .bg-3
+        {
+            background-color: #ffffff; /* White */
+            color: #555555;
+        }
+        .bg-4
+        {
+            background-color: #023047;
+            color: #ffffff;
+        }
+        .bg-5
+        {
+            background-color: #db3a34;
+            color: #ffffff;
+        }
+        .bg-6
+        {
+            background-color: #48cae4;
+            color: #ffffff;
+        }
+        .bg-7
+        {
+            background-color: #a8dadc;
+            color: #ffffff;
+        }
+        .container-fluid
+        {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        .container-fluid-1
+        {
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
+        .container-fluid-2
+        {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .navbar
+        {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+        .navbar-nav li a:hover
+        {
+            color: #1abc9c !important;
+        }
+        body
+        {
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+        p
+        {
+            font-size: 16px;
+        }
+        .margin
+        {
+            margin-bottom: 45px;
+        }
+        link
+        {
+            text-decoration: none;
+        }
+        h3
+        {
+            font-size: 45px;
+            font-weight: bolder;
+        }
+        h2
+        {
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        .p1
+        {
+            font-size: 16px;
+            text-align: left;
+        }
+        .p2
+        {
+            font-size:20px;
+        }
+        body, h1, h2, h3, h4, h5, h6
+        {
+            font-family: "Orbitron";
+            text-shadow: 3px 3px 3px #ababab;
+        }
+        span
+        {
+            color: yellow;
+        }
+        #section1{}
+        #section2{}
+        a:hover
+        {
+            color: white;
+        }
+        a:visited
+        {
+            color: white;
+        }
+        .img-circle
+        {
+            box-shadow: 5px 5px 5px yellow;
+        }
+        .button1
+        {
+            background-color: white;
+            color:black;
+            border: 2px solid red;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        .button1:hover
+        {
+            background-color: red;
+            color: white;
+        }
+        .img-circle
+        {
+            position: relative;
+            animation: myFirst 2.5s infinite linear;
+        }
+        @keyframes myFirst
+        {
+            0%{top:0px;}
+            25%{top:-4px;}
+            50%{top:0px;}
+            75%{top:4px;}
+            100%{top:0px;}
+        }
+        img
+        {
+            border-radius: 8px;
+        }
+        video
+        {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        new kursor
+        ({
+            type: 1,
+            removeDefaultCursor: true,
+            color: "#008DD7",
+        });
+    </script>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Home</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#section2">Contact Me</a></li>
+                    <li><a href="#section1">About</a></li>
+                    <li><a href="https://medium.com/@mehmetkaymakci2002" target="_blank">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid bg-1 text-center">
+        <h3>Who Am I?</h3><br>
+        <img src="me.jpg" alt="me" class="img-circle" width="325" height="350">
+        <div class="container">
+            <h3>I'm a <span class="auto-type"></span></h3>
+        </div>
+        <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".auto-type", 
+            {
+                strings:["Game Developer","Web Developer","Code Lover"],
+                typeSpeed:100,
+                backSpeed:100,
+                loop:true
+            })
+        </script>
+    </div>
+    <div class="container-fluid-1 bg-2 text-center" id="section1">
+        <h3>My Story?</h3><br>
+        <p>I have a passion for <strong>games</strong> and <strong>technology</strong> since I was little.Then I met the magical world of <strong>software</strong>.<br>The first programming language I met was <strong>python</strong>.I studied at the Topkapı Technology High School <strong>Mechatronics</strong> Department.<br>I'm currently studying <strong>Graphic Design</strong> at Istanbul University Open Education.</p><br>
+        <a href="https://linktr.ee/mehmetkaymak_0" target="_blank" class="btn btn-default btn-lg" style="color:black">
+            <span1 class="glyphicon glyphicon-search"></span1>Search
+        </a>
+    </div>
+    <div class="container-fluid-2 bg-5 text-center" id="section1">
+        <h3><a href="https://en.wikipedia.org/wiki/Huns#:~:text=The%20Huns%20were%20a%20nomadic,4th%20and%206th%20century%20AD." target="_blank">Origin?</a></h3><br>
+        Nationality: <a href="https://en.wikipedia.org/wiki/Turkey" target="_blank">Turkey</a><br>Origin: <a href="https://en.wikipedia.org/wiki/Konya" target="_blank">Konya</a><br>Birth Year: 2003<br>Martial Status: <a href="single.gif" target="_blank">Single</a><br>Languages: <a href="https://en.wikipedia.org/wiki/Turkish_language" target="_blank">Turkish(Native)</a> & English(Beginner)</a><br>Experience: <a href="experience.gif" target="_blank">2 years</a><br>Interests: <a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon" target="_blank">Pocket Monsters</a> &<a href="https://en.wikipedia.org/wiki/Italian_Game" target="_blank"> Chess</a>
+    </div>
+    <div class="container-fluid bg-3 text-center bg-6">
+        <div class="w3-container w3-center w3-animate-top">
+        <h3 class="bg-primary">Projects</h3>
+        </div>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Ottoman Through Janissary Eyes</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.OttomanThroughJanissaryEyes&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="ottoman1.webp" alt="ottoman1" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="ottoman2.webp" alt="ottoman1" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="ottoman3.webp" alt="ottoman3" style="width:100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Jungle Adventure</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.JungleAdventure&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="jungle adventure1.webp" alt="jungle adventure1" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="jungle adventure2.webp" alt="jungle adventure1" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="jungle adventure3.webp" alt="jungle adventure3"  style="width:100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>3D Last Hope</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDLastHope&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="3d last hope1.webp" alt="3d last hope1" class="img-responsive" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="3d last hope2.webp" alt="3d last hope2" class="img-responsive" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="3d last hope3.webp" alt="3d last hope3" class="img-responsive" style="width:100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>3D Snake</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDSnake&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="3D Snake1.webp" alt="3D Snake1" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="3D Snake2.webp" alt="3D Snake2" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="3D Snake3.webp" alt="3D Snake3" style="width:100%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>3D Running Game</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDRunningGame&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="3D Running Game1.webp" alt="3D Running Game1" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="3D Running Game2.webp" alt="3D Running Game2" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="3D Running Game3.webp" alt="3D Running Game3" style="width: 100%;">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>General Culture Competition</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.GeneralCultureCompetition&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="General Culture Competition1.webp" alt="General Culture Competition1" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="General Culture Competition2.webp" alt="General Culture Competition2" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="General Culture Competition3.webp" alt="General Culture Competition3" style="width:100%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Balloon Pop</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.BalloonPop&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="Balloon Pop1.webp" alt="BalloonPop1" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="Balloon Pop2.webp" alt="BalloonPop2" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="Balloon Pop3.webp" alt="BalloonPop3" style="width:100%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>2D Bouncing Ball</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.TwoDBouncingBall&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="2DBouncing Ball1.webp" alt="2DBouncingBall1" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="2DBouncing Ball2.webp" alt="2DBouncingBall2" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="2DBouncing Ball3.webp" alt="2DBouncingBall3" style="width:100%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>3D Cube Runner</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDCubeRunner&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="3DCubeRunner1.webp" alt="3DCubeRunner1" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="3DCubeRunner2.webp" alt="3DCubeRunner2" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="3DCubeRunner3.webp" alt="3DCubeRunner3" style="width:100%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Line Runner</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.LineRunner&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="LineRunner1.webp" alt="LineRunner1" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="LineRunner2.webp" alt="LineRunner2" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="LineRunner3.webp" alt="LineRunner3" style="width:100%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Stay Safe</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.StaySafe&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="StaySafe1.webp" alt="StaySafe1" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="StaySafe2.webp" alt="StaySafe2" style="width:100%">
+            </div>
+            <div class="col-sm-4">
+                <img src="StaySafe3.webp" alt="StaySafe3" style="width:100%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>3D Hyper Drift</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDHyperDrift&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="3D HYPER DRIFT1.webp" alt="3D HYPER DRIFT1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="3D HYPER DRIFT2.webp" alt="3D HYPER DRIFT2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="3D HYPER DRIFT3.webp" alt="3D HYPER DRIFT3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>2D BALL BLAST</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.TWODBALLBLAST&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="2D BALL BLAST1.webp" alt="2D BALL BLAST1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="2D BALL BLAST2.webp" alt="2D BALL BLAST2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="2D BALL BLAST3.webp" alt="2D BALL BLAST3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>2D AA</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.TWODAA&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="2D AA1.webp" alt="2D AA1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="2D AA2.webp" alt="2D AA2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="2D AA3.webp" alt="2D AA3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Space War</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.SpaceWar&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="Space War1.webp" alt="SpaceWar1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="Space War2.webp" alt="SpaceWar2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="Space War3.webp" alt="SpaceWar3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Sky War</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.SkyWar&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="SkyWar1.webp" alt="SkyWar1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="SkyWar2.webp" alt="SkyWar2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="SkyWar3.webp" alt="SkyWar3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>3D Atm Rush</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDAtmRush&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="3DAtmRush1.webp" alt="3DAtmRush1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
+                <img src="3DAtmRush3.webp" alt="3DAtmRush3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>3D Pottery</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.ThreeDPottery&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="3DPottery1.webp" alt="3DPottery1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
+                <img src="3DPottery3.webp" alt="3DPottery3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>3D CUBE SURFER</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.THREEDCUBESURFER&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="3DCUBESURFER1.webp" alt="3DCUBESURFER1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
+                <img src="3DCUBESURFER3.webp" alt="3DCUBESURFER3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>3D Helix Jump</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDHelixJump&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="3DHelixJump1.webp" alt="3DHelixJump1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
+                <img src="3DHelixJump3.webp" alt="3DHelixJump3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>2D Circle</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.TwoDCircle&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="2DCircle1.webp" alt="2DCircle1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
+                <img src="2DCircle1.webp" alt="2DCircle1" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>3D Tappy Ball</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDTappyBall&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="3DTappyBall1.webp" alt="3DTappyBall1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
+                <img src="3DTappyBall3.webp" alt="3DTappyBall3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Race Master</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.RaceMaster&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="RaceMaster1.webp" alt="RaceMaster1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
+                <img src="RaceMaster3.webp" alt="RaceMaster3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Dodging Dog</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.DodgingDog&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="DodgingDog1.webp" alt="DodgingDog1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
+                <img src="DodgingDog3.webp" alt="DodgingDog3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Doodle Jump</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.DoodleJump&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="DoodleJump1.webp" alt="DoodleJump1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="DoodleJump2.webp" alt="DoodleJump2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="DoodleJump3.webp" alt="DoodleJump3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Space Adventure</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.SpaceAdventure&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="SpaceAdventure1.webp" alt="SpaceAdventure1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
+                <img src="SpaceAdventure3.webp" alt="SpaceAdventure3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Bouncing Dot</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.BouncingDot&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="BouncingDot1.webp" alt="BouncingDot1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="BouncingDot3.webp" alt="BouncingDot3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Ball Smash</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.BallSmash&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="BallSmash1.webp" alt="BallSmash1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                <img src="BallSmash3.webp" alt="BallSmash3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Food Eater</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.FoodEater&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="FoodEater1.webp" alt="FoodEater1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="FoodEater2.webp" alt="FoodEater2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="FoodEater3.webp" alt="FoodEater3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Cube Runner</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.CubeRunner&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="CubeRunner1.webp" alt="CubeRunner1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="CubeRunner2.webp" alt="CubeRunner2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="CubeRunner3.webp" alt="CubeRunner3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Fly Hero</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.FlyHero&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="FlyHero1.webp" alt="FlyHero1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="FlyHero2.webp" alt="FlyHero2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="FlyHero3.webp" alt="FlyHero3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>2D FLY BIRD</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.FlappyBird&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="2DFLYBIRD1.webp" alt="2DFLYBIRD1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="2DFLYBIRD2.webp" alt="2DFLYBIRD2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="2DFLYBIRD3.webp" alt="2DFLYBIRD3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>2D COLOR SWITCH</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.SwitchColor&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="2DCOLORSWITCH1.webp" alt="2DCOLORSWITCH1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="2DCOLORSWITCH2.webp" alt="2DCOLORSWITCH2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="2DCOLORSWITCH3.webp" alt="2DCOLORSWITCH3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Mega Cubes</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.MegaCubes&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="MegaCubes1.webp" alt="MegaCubes1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="MegaCubes2.webp" alt="MegaCubes2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="MegaCubes3.webp" alt="MegaCubes3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Tic Tac Toe</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.TicTacToe&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="TicTacToe1.webp" alt="TicTacToe1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="TicTacToe2.webp" alt="TicTacToe2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="TicTacToe3.webp" alt="TicTacToe3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>3D Roller Splat</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.RollerSplat&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="3DRollerSplat1.webp" alt="3DRollerSplat1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="3DRollerSplat2.webp" alt="3DRollerSplat2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="3DRollerSplat3.webp" alt="3DRollerSplat3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Out Jump</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.OutJump&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="OutJump1.webp" alt="OutJump1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="OutJump2.webp" alt="OutJump2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="OutJump3.webp" alt="OutJump3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>History Quiz</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.HistoryQuiz&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="HistoryQuiz1.webp" alt="HistoryQuiz1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="HistoryQuiz2.webp" alt="HistoryQuiz2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="HistoryQuiz3.webp" alt="HistoryQuiz3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>3D Zigzag</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ZigZag&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="3DZigzag1.webp" alt="3DZigzag1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="3DZigzag2.webp" alt="3DZigzag2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="3DZigzag3.webp" alt="3DZigzag3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>3D Jumping Ball</h2>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDJumpingBall&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="3DJumpingBall1.webp" alt="3DJumpingBall1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="3DJumpingBall2.webp" alt="3DJumpingBall2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="3DJumpingBall3.webp" alt="3DJumpingBall3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Duet</h2>
+            </div>
+            <a href="https://darkboy00.itch.io/duet" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="Duet1.png" alt="Duet1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="Duet2.png" alt="Duet2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="Duet3.png" alt="Duet3" style="width:50%">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="w3-container w3-center w3-animate-bottom">
+            <h2>Fruit Ninja 2D</h2>
+            </div>
+            <a href="https://darkboy00.itch.io/fruit-ninja-2d" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <div class="col-sm-4">
+                <img src="fruitninja2d1.png" alt="fruitninja2d1" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="fruitninja2d2.png" alt="fruitninja2d2" style="width:50%">
+            </div>
+            <div class="col-sm-4">
+                <img src="fruitninja2d3.png" alt="fruitninja2d3" style="width:50%">
+            </div>
+        </div><br>
+    </div>
+    <div class="container-fluid bg-7 text-center">
+        <div class="w3-container w3-center w3-animate-top">
+        <h3 class="bg-primary">Skills</h3><br>
+        </div>
+        <div class="container">
+            <div class="w3-container w3-center w3-animate-left">
+            <img src="python.png" alt="python" width="25" align="left">
+            <p class="p1">&nbsp;&nbsp;Python</p>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                    30%
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="w3-container w3-center w3-animate-left">
+            <img src="unity.png" alt="unity" width="25" align="left">
+            <p class="p1">&nbsp;&nbsp;Unity</p>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                    40%
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="w3-container w3-center w3-animate-left">
+            <img src="c-sharp.png" alt="c-sharp" width="25" align="left">
+            <p class="p1">&nbsp;&nbsp;C#</p>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                    20%
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="w3-container w3-center w3-animate-left">
+            <img src="html.png" alt="html" width="25" align="left">
+            <p class="p1">&nbsp;&nbsp;Html5</p>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                    25%
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="w3-container w3-center w3-animate-left">
+            <img src="css-3.png" alt="css-3" width="25" align="left">
+            <p class="p1">&nbsp;&nbsp;Css3</p>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:10%">
+                    10%
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="w3-container w3-center w3-animate-left">
+                <img src="bootstrap.png" alt="bootstrap" width="25" align="left">
+            <p class="p1">&nbsp;&nbsp;Bootstrap</p>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width:5%">
+                    5%
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid bg-4 text-center">
+        <div class="container" id="section2">
+            <div class="btn-group btn-group-justified">
+                <a href="https://github.com/Darkboy00" target="_blank" class="btn btn-primary"><img src="github.png" alt="github" width="25">&nbsp;&nbsp;Github</a>
+                <a href="https://play.google.com/store/apps/dev?id=6091067287605056935&hl=tr" class="btn btn-primary" target="_blank"><img src="googleplaystore.png" alt="googleplaystore" width="25">&nbsp;&nbsp;&nbsp;&nbsp;Google Play Store</a>
+                <a href="https://www.instagram.com/mehmetkaymak_0/?hl=tr" class="btn btn-primary" target="_blank"><img src="instagram.png" alt="instagram" width="25">&nbsp;&nbsp;Instagram</a>
+            </div>
+        </div>
+        <br>
+        <img src="pdf.png" alt="pdf" width="25">
+        <a href="mehmetkaymakci.com.pdf" class="text-secondary" download>download as PDF</a>
+    </footer>
+</body>
+</html>
