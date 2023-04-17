@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
     <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="icon" href="favicon.png">
     <style>
         .bg-1
         {
@@ -31,12 +32,22 @@
         }
         .bg-4
         {
-            background-color: #2f2f2f;
+            background-color: #023047;
             color: #ffffff;
         }
         .bg-5
         {
-            background-color: #a90101;
+            background-color: #db3a34;
+            color: #ffffff;
+        }
+        .bg-6
+        {
+            background-color: #48cae4;
+            color: #ffffff;
+        }
+        .bg-7
+        {
+            background-color: #a8dadc;
             color: #ffffff;
         }
         .container-fluid
@@ -123,6 +134,44 @@
         {
             color: white;
         }
+        .img-circle
+        {
+            box-shadow: 5px 5px 5px yellow;
+        }
+        .button1
+        {
+            background-color: white;
+            color:black;
+            border: 2px solid red;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        .button1:hover
+        {
+            background-color: red;
+            color: white;
+        }
+        .img-circle
+        {
+            position: relative;
+            animation: myFirst 2.5s infinite linear;
+        }
+        @keyframes myFirst
+        {
+            0%{top:0px;}
+            25%{top:-4px;}
+            50%{top:0px;}
+            75%{top:4px;}
+            100%{top:0px;}
+        }
+        img
+        {
+            border-radius: 8px;
+        }
+        video
+        {
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
@@ -181,7 +230,7 @@
         <h3><a href="https://en.wikipedia.org/wiki/Huns#:~:text=The%20Huns%20were%20a%20nomadic,4th%20and%206th%20century%20AD." target="_blank">Origin?</a></h3><br>
         Nationality: <a href="https://en.wikipedia.org/wiki/Turkey" target="_blank">Turkey</a><br>Origin: <a href="https://en.wikipedia.org/wiki/Konya" target="_blank">Konya</a><br>Birth Year: 2003<br>Martial Status: <a href="single.gif" target="_blank">Single</a><br>Languages: <a href="https://en.wikipedia.org/wiki/Turkish_language" target="_blank">Turkish(Native)</a> & English(Beginner)</a><br>Experience: <a href="experience.gif" target="_blank">2 years</a><br>Interests: <a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon" target="_blank">Pocket Monsters</a> &<a href="https://en.wikipedia.org/wiki/Italian_Game" target="_blank"> Chess</a>
     </div>
-    <div class="container-fluid bg-3 text-center">
+    <div class="container-fluid bg-3 text-center bg-6">
         <div class="w3-container w3-center w3-animate-top">
         <h3 class="bg-primary">Projects</h3>
         </div>
@@ -189,42 +238,45 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Ottoman Through Janissary Eyes</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.OttomanThroughJanissaryEyes&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.OttomanThroughJanissaryEyes&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=gHr-tieFubg" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
-                <img src="ottoman1.webp" alt="ottoman1" class="img-responsive" style="width:100%">
+                <img src="ottoman1.webp" alt="ottoman1" style="width:100%">
             </div>
             <div class="col-sm-4">
-                <img src="ottoman2.webp" alt="ottoman2" class="img-responsive" style="width:100%">
+                <img src="ottoman2.webp" alt="ottoman1" style="width:100%">
             </div>
             <div class="col-sm-4">
-                <img src="ottoman3.webp" alt="ottoman3" class="img-responsive" style="width:100%">
+                <img src="ottoman3.webp" alt="ottoman3" style="width:100%">
             </div>
         </div>
         <div class="row">
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Jungle Adventure</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.JungleAdventure&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.JungleAdventure&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=nohPKAm2Eo0" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
-                <img src="jungle adventure1.webp" alt="jungle adventure1" class="img-responsive" style="width:100%">
+                <img src="jungle adventure1.webp" alt="jungle adventure1" style="width:100%">
             </div>
             <div class="col-sm-4">
-                <img src="jungle adventure2.webp" alt="jungle adventure2" class="img-responsive" style="width:100%">
+                <img src="jungle adventure2.webp" alt="jungle adventure1" style="width:100%">
             </div>
             <div class="col-sm-4">
-                <img src="jungle adventure3.webp" alt="jungle adventure3" class="img-responsive" style="width:100%">
+                <img src="jungle adventure3.webp" alt="jungle adventure3"  style="width:100%">
             </div>
         </div>
         <div class="row">
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>3D Last Hope</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDLastHope&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDLastHope&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=fD1HMXf8NC0" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
-                <img src="3d last hope1.webp" alt="jungle adventure1" class="img-responsive" style="width:100%">
+                <img src="3d last hope1.webp" alt="3d last hope1" class="img-responsive" style="width:100%">
             </div>
             <div class="col-sm-4">
-                <img src="3d last hope2.webp" alt="jungle adventure1" class="img-responsive" style="width:100%">
+                <img src="3d last hope2.webp" alt="3d last hope2" class="img-responsive" style="width:100%">
             </div>
             <div class="col-sm-4">
                 <img src="3d last hope3.webp" alt="3d last hope3" class="img-responsive" style="width:100%">
@@ -234,22 +286,24 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>3D Snake</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDSnake&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDSnake&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=9eDkC94Q0PU" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
-                <img src="3D Snake1.webp" alt="3D Snake1" class="img-responsive" style="width:100%">
+                <img src="3D Snake1.webp" alt="3D Snake1" style="width:100%">
             </div>
             <div class="col-sm-4">
-                <img src="3D Snake2.webp" alt="3D Snake2" class="img-responsive" style="width:100%">
+                <img src="3D Snake2.webp" alt="3D Snake2" style="width:100%">
             </div>
             <div class="col-sm-4">
-                <img src="3D Snake3.webp" alt="3D Snake3" class="img-responsive" style="width:100%">
+                <img src="3D Snake3.webp" alt="3D Snake3" style="width:100%">
             </div>
         </div><br>
         <div class="row">
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>3D Running Game</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDRunningGame&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDRunningGame&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=9z7OVgcSFdQ" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="3D Running Game1.webp" alt="3D Running Game1" style="width:100%">
             </div>
@@ -264,7 +318,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>General Culture Competition</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.GeneralCultureCompetition&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.GeneralCultureCompetition&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=U0hPUxTyDUg" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="General Culture Competition1.webp" alt="General Culture Competition1" style="width:100%">
             </div>
@@ -279,7 +334,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Balloon Pop</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.BalloonPop&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.BalloonPop&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=9nUNhdjpSLw" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="Balloon Pop1.webp" alt="BalloonPop1" style="width:100%">
             </div>
@@ -294,7 +350,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>2D Bouncing Ball</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.TwoDBouncingBall&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.TwoDBouncingBall&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=VEOpDADb9t4" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="2DBouncing Ball1.webp" alt="2DBouncingBall1" style="width:100%">
             </div>
@@ -309,7 +366,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>3D Cube Runner</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDCubeRunner&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDCubeRunner&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=oBeo312pToA" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="3DCubeRunner1.webp" alt="3DCubeRunner1" style="width:100%">
             </div>
@@ -324,7 +382,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Line Runner</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.LineRunner&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.LineRunner&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=VP2O1qXdwBo" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="LineRunner1.webp" alt="LineRunner1" style="width:100%">
             </div>
@@ -339,7 +398,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Stay Safe</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.StaySafe&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.StaySafe&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=8c5JVwJLEd0" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="StaySafe1.webp" alt="StaySafe1" style="width:100%">
             </div>
@@ -354,7 +414,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>3D Hyper Drift</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDHyperDrift" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDHyperDrift&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=ZgEuDv0aAwE" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="3D HYPER DRIFT1.webp" alt="3D HYPER DRIFT1" style="width:50%">
             </div>
@@ -369,7 +430,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>2D BALL BLAST</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.TWODBALLBLAST&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.TWODBALLBLAST&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=r8NYDCreBSQ" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="2D BALL BLAST1.webp" alt="2D BALL BLAST1" style="width:50%">
             </div>
@@ -384,7 +446,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>2D AA</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.TWODAA&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.TWODAA&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=99LyTyTBQyY" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="2D AA1.webp" alt="2D AA1" style="width:50%">
             </div>
@@ -399,7 +462,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Space War</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.SpaceWar&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.SpaceWar&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=uRAGRSMr1wc" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="Space War1.webp" alt="SpaceWar1" style="width:50%">
             </div>
@@ -414,7 +478,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Sky War</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.SkyWar" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.SkyWar&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=uLi4sLUBvEU" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="SkyWar1.webp" alt="SkyWar1" style="width:50%">
             </div>
@@ -429,7 +494,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>3D Atm Rush</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDAtmRush&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDAtmRush&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=z2QL2GJaKdo" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="3DAtmRush1.webp" alt="3DAtmRush1" style="width:50%">
             </div>
@@ -444,7 +510,7 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>3D Pottery</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.ThreeDPottery&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.ThreeDPottery&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
             <div class="col-sm-4">
                 <img src="3DPottery1.webp" alt="3DPottery1" style="width:50%">
             </div>
@@ -459,7 +525,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>3D CUBE SURFER</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.THREEDCUBESURFER&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.THREEDCUBESURFER&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=FR1CAF9Lchw" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="3DCUBESURFER1.webp" alt="3DCUBESURFER1" style="width:50%">
             </div>
@@ -474,7 +541,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>3D Helix Jump</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDHelixJump&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDHelixJump&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=yntRs2Fjw-0" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="3DHelixJump1.webp" alt="3DHelixJump1" style="width:50%">
             </div>
@@ -489,12 +557,13 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>2D Circle</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.TwoDCircle&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.TwoDCircle&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=j7sHrIfc034" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="2DCircle1.webp" alt="2DCircle1" style="width:50%">
             </div>
             <div class="col-sm-4">
-                <img src="2DCircle1.webp" alt="2DCircle1" style="width:50%">
+                <img src="2DCircle2.webp" alt="2DCircle2" style="width:50%">
             </div>
             <div class="col-sm-4">
                 <img src="2DCircle1.webp" alt="2DCircle1" style="width:50%">
@@ -504,7 +573,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>3D Tappy Ball</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDTappyBall&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDTappyBall&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=Csz8FP-qWTY" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="3DTappyBall1.webp" alt="3DTappyBall1" style="width:50%">
             </div>
@@ -519,7 +589,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Race Master</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.RaceMaster&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.RaceMaster&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=MyoXjRqt5tQ" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="RaceMaster1.webp" alt="RaceMaster1" style="width:50%">
             </div>
@@ -534,7 +605,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Dodging Dog</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.DodgingDog&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.DodgingDog&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=wudIXAxkPiU" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="DodgingDog1.webp" alt="DodgingDog1" style="width:50%">
             </div>
@@ -549,7 +621,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Doodle Jump</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.DoodleJump&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.DoodleJump&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=0i144qc_7Pc" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="DoodleJump1.webp" alt="DoodleJump1" style="width:50%">
             </div>
@@ -564,7 +637,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Space Adventure</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.SpaceAdventure&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.SpaceAdventure&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=rb2d4R1P-9I" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="SpaceAdventure1.webp" alt="SpaceAdventure1" style="width:50%">
             </div>
@@ -579,7 +653,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Bouncing Dot</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.BouncingDot&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.BouncingDot&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=DTH_wojXnco" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="BouncingDot1.webp" alt="BouncingDot1" style="width:50%">
             </div>
@@ -594,7 +669,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Ball Smash</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.BallSmash&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.BallSmash&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=ezcclLxSyNw" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="BallSmash1.webp" alt="BallSmash1" style="width:50%">
             </div>
@@ -609,7 +685,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Food Eater</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.FoodEater&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.FoodEater&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=12wh8gCg73M" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="FoodEater1.webp" alt="FoodEater1" style="width:50%">
             </div>
@@ -624,7 +701,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Cube Runner</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.CubeRunner&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.CubeRunner&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=To90yUuscWM" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="CubeRunner1.webp" alt="CubeRunner1" style="width:50%">
             </div>
@@ -639,7 +717,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Fly Hero</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.FlyHero&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.FlyHero&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=4_E6oUIFGFU" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="FlyHero1.webp" alt="FlyHero1" style="width:50%">
             </div>
@@ -654,7 +733,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>2D FLY BIRD</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.FlappyBird&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.FlappyBird&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=MFHx1j383ks" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="2DFLYBIRD1.webp" alt="2DFLYBIRD1" style="width:50%">
             </div>
@@ -669,7 +749,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>2D COLOR SWITCH</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.SwitchColor&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.SwitchColor&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=8CDCZWvjtEI" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="2DCOLORSWITCH1.webp" alt="2DCOLORSWITCH1" style="width:50%">
             </div>
@@ -684,7 +765,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Mega Cubes</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.MegaCubes&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.MegaCubes&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=nzo6ExI8VHk" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="MegaCubes1.webp" alt="MegaCubes1" style="width:50%">
             </div>
@@ -699,7 +781,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Tic Tac Toe</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.TicTacToe&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.TicTacToe&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=4idlXc3A1zY" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="TicTacToe1.webp" alt="TicTacToe1" style="width:50%">
             </div>
@@ -714,7 +797,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>3D Roller Splat</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.RollerSplat&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.RollerSplat&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=Z-eWs_vceLk" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="3DRollerSplat1.webp" alt="3DRollerSplat1" style="width:50%">
             </div>
@@ -729,7 +813,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Out Jump</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.OutJump&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.OutJump&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=ihmQFj3KgRg" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="OutJump1.webp" alt="OutJump1" style="width:50%">
             </div>
@@ -744,7 +829,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>History Quiz</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.HistoryQuiz&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.HistoryQuiz&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=6lTjc6-B3sM" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="HistoryQuiz1.webp" alt="HistoryQuiz1" style="width:50%">
             </div>
@@ -759,7 +845,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>3D Zigzag</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ZigZag&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ZigZag&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=J_7sFWhrGUA" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="3DZigzag1.webp" alt="3DZigzag1" style="width:50%">
             </div>
@@ -774,7 +861,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>3D Jumping Ball</h2>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDJumpingBall&hl=tr" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.ThreeDJumpingBall&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=oHt-6cql9zw" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="3DJumpingBall1.webp" alt="3DJumpingBall1" style="width:50%">
             </div>
@@ -789,7 +877,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Duet</h2>
             </div>
-            <a href="https://darkboy00.itch.io/duet" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://darkboy00.itch.io/duet" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=seAdIqUNA_8" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="Duet1.png" alt="Duet1" style="width:50%">
             </div>
@@ -804,7 +893,8 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Fruit Ninja 2D</h2>
             </div>
-            <a href="https://darkboy00.itch.io/fruit-ninja-2d" target="_blank" class="text-danger" style="color:red"><p>Game Link</p></a>
+            <a href="https://darkboy00.itch.io/fruit-ninja-2d" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://www.youtube.com/watch?v=pReOVDdPDt4" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4">
                 <img src="fruitninja2d1.png" alt="fruitninja2d1" style="width:50%">
             </div>
@@ -815,6 +905,8 @@
                 <img src="fruitninja2d3.png" alt="fruitninja2d3" style="width:50%">
             </div>
         </div><br>
+    </div>
+    <div class="container-fluid bg-7 text-center">
         <div class="w3-container w3-center w3-animate-top">
         <h3 class="bg-primary">Skills</h3><br>
         </div>
