@@ -131,12 +131,11 @@ a:visited
     margin-bottom: 10px;
     border-radius: 8px;
     text-shadow: 3px 3px 3px #ababab;
-}
-.button1:hover
-{
-    background-color: red;
-    color: white;
-    text-shadow: 3px 3px 3px #ababab;
+    animation-name: button;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
 }
 .img-circle
 {
@@ -155,7 +154,21 @@ img
 {
     border-radius: 8px;
 }
-video
+@keyframes button
 {
-    border-radius: 8px;
+    0%{background-color: white;}
+    100%{background-color: red;}
+}
+@keyframes button1
+{
+    0%{background-color: #286090;}
+    100%{background-color: lightblue;}
+}
+.btn
+{
+    animation-name: button1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
 }
