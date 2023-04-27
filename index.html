@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <body onload="myFunction()" style="margin:0;">
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
     <script>
         new kursor
         ({
@@ -822,14 +825,29 @@
     </div>
     <footer class="container-fluid bg-4 text-center">
         <div class="container" id="section2">
-                <a href="https://github.com/Darkboy00" target="_blank" class="btn1"><img src="github.png" alt="github" width="40" class="img-1"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://play.google.com/store/apps/dev?id=6091067287605056935&hl=tr" target="_blank" class="btn1"><img src="googleplaystore.png" alt="googleplaystore" width="40" class="img-1"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://www.instagram.com/mehmetkaymak_0/?hl=tr" target="_blank" class="btn1"><img src="instagram.png" alt="instagram" width="40" class="img-1"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://www.youtube.com/@mehmetkaymakc9125/featured" target="_blank" class="btn1"><img src="youtube.png" alt="youtube" width="40" class="img-1"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://github.com/Darkboy00" target="_blank" class="btn1"><img src="github.png" alt="github" width="40" class="img-1"></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://play.google.com/store/apps/dev?id=6091067287605056935&hl=tr" target="_blank" class="btn1"><img src="googleplaystore.png" alt="googleplaystore" width="40" class="img-1"></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://www.instagram.com/mehmetkaymak_0/?hl=tr" target="_blank" class="btn1"><img src="instagram.png" alt="instagram" width="40" class="img-1"></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://www.youtube.com/@mehmetkaymakc9125/featured" target="_blank" class="btn1"><img src="youtube.png" alt="youtube" width="40" class="img-1"></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://darkboy00.itch.io/" target="_blank" class="btn1"><img src="itch.io.png" alt="itch.io" width="40" class="img-1"></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://bionluk.com/mehmet1071" target="_blank" class="btn1"><img src="freelance.png" alt="freelance" width="40" class="img-1"></a>
         </div>
         <br>
         <img src="pdf.png" alt="pdf" width="25" class="img-1">
         <a href="mehmetkaymakci.com.pdf" class="text-secondary" download>download as PDF</a>
-    </footer> 
+    </footer>
+    </div> 
+    <script>
+        var myVar;
+            function myFunction() 
+            {
+              myVar = setTimeout(showPage, 3000);
+            }
+            function showPage() 
+            {
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("myDiv").style.display = "block";
+            }
+    </script>  
 </body>
 </html>

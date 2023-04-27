@@ -134,6 +134,14 @@ a:visited
     animation-timing-function: linear;
     animation-direction: alternate;
 }
+.button1:hover
+{
+    animation-name: button;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
 .img-circle
 {
     position: relative;
@@ -222,4 +230,57 @@ img
 .bg-primary
 {
     box-shadow: 3px 3px 3px #ababab;
+}
+#loader 
+{
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 1px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: .1px solid #ff1d58;
+    border-right: .1px solid #f75990;
+    border-bottom: .1px solid #fff685;
+    border-left: .1px solid #00DDFF;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 0.5s linear infinite;
+}
+@-webkit-keyframes spin 
+{
+    0% { -webkit-transform: rotate(0deg);}
+    100% { -webkit-transform: rotate(360deg);}
+}
+@keyframes spin 
+{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+/* Add animation to "page content" */
+.animate-bottom 
+{
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+@-webkit-keyframes animatebottom 
+{
+    from {bottom:-100px; opacity:0;} 
+    to {bottom:0px; opacity:1}
+}
+@keyframes animatebottom 
+{ 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+#myDiv 
+{
+    display: none;
+    text-align: center;
 }
