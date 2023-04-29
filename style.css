@@ -1,37 +1,44 @@
 .bg-1
 {
-    background-color: #1abc9c; /* Green */
-    color: #ffffff;
+    background: linear-gradient(-45deg, #62300a, #ca8e1b, #deb25f, #fcdd8b);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite; 
 }
 .bg-2
 {
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
+    background: linear-gradient(-45deg, #5f67e9, #d1a607, #d07214, #fde84e);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite; 
 }
 .bg-3
 {
-    background-color: #ffffff; /* White */
-    color: #555555;
+    background: linear-gradient(-45deg, #5f67e9, #d1a607, #d07214, #fde84e);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite; 
 }
 .bg-4
 {
-    background-color: #023047;
-    color: #ffffff;
+    background: linear-gradient(-45deg, #3465ea, #cca2f6, #f3e5f5, #90371d);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite; 
 }
 .bg-5
 {
-    background-color: #db3a34;
-    color: #ffffff;
+    background: linear-gradient(-45deg, #321c53, #de3547, #fe5373, #fd8e5c);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite; 
 }
 .bg-6
 {
-    background-color: #48cae4;
-    color: #ffffff;
+    background: linear-gradient(-45deg, #0f00ff, #b75863, #e77d8e, #fb9e9d);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite; 
 }
 .bg-7
 {
-    background-color: #a8dadc;
-    color: #ffffff;
+    background: linear-gradient(-45deg, #04416a, #1ea8e6, #a1d5ee, #dadbdc);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite; 
 }
 .container-fluid
 {
@@ -45,8 +52,8 @@
 }
 .container-fluid-2
 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 .navbar
 {
@@ -67,10 +74,6 @@ body
     line-height: 1.8;
     color: #f5f6f7;
 }
-p
-{
-    font-size: 16px;
-}
 .margin
 {
     margin-bottom: 45px;
@@ -79,11 +82,6 @@ link
 {
     text-decoration: none;
 }
-h3
-{
-    font-size: 45px;
-    font-weight: bolder;
-}
 h2
 {
     font-size: 30px;
@@ -91,6 +89,16 @@ h2
     background-color: #38ACEC;
     border-radius: 8px;
     box-shadow: 3px 3px 3px #ababab;
+    margin-bottom: -10px;
+}
+h3
+{
+    font-size: 45px;
+    font-weight: bolder;
+}
+p
+{
+    font-size: 16px;
 }
 .p1
 {
@@ -208,6 +216,38 @@ img
     0%{filter:opacity(.3) grayscale(100);} 
     100%{filter:opacity(1) grayscale(0);}
 }
+@-webkit-keyframes spin 
+{
+    0% { -webkit-transform: rotate(0deg);}
+    100% { -webkit-transform: rotate(360deg);}
+}
+@keyframes spin 
+{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@keyframes gradient 
+{
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@-webkit-keyframes animatebottom 
+{
+    from {bottom:-100px; opacity:0;} 
+    to {bottom:0px; opacity:1}
+}
+@keyframes animatebottom 
+{ 
+    from{bottom:-100px; opacity:0 } 
+    to{bottom:0; opacity:1 }
+}
 .btn1
 {
     animation-name: button1;
@@ -230,6 +270,9 @@ img
 .bg-primary
 {
     box-shadow: 3px 3px 3px #ababab;
+    background: linear-gradient(-45deg, #117561, #36a97c, #3bd68d, #d5fed9);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite; 
 }
 #loader 
 {
@@ -250,16 +293,6 @@ img
     -webkit-animation: spin 2s linear infinite;
     animation: spin 0.5s linear infinite;
 }
-@-webkit-keyframes spin 
-{
-    0% { -webkit-transform: rotate(0deg);}
-    100% { -webkit-transform: rotate(360deg);}
-}
-@keyframes spin 
-{
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
-}
 /* Add animation to "page content" */
 .animate-bottom 
 {
@@ -269,18 +302,19 @@ img
     animation-name: animatebottom;
     animation-duration: 1s
 }
-@-webkit-keyframes animatebottom 
-{
-    from {bottom:-100px; opacity:0;} 
-    to {bottom:0px; opacity:1}
-}
-@keyframes animatebottom 
-{ 
-    from{bottom:-100px; opacity:0 } 
-    to{bottom:0; opacity:1 }
-}
 #myDiv 
 {
     display: none;
     text-align: center;
+}
+.zoom 
+{
+    transition: transform .2s;
+    margin: 0 auto;
+}
+.zoom:hover 
+{
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
 }
