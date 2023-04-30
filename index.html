@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="app.js">
 </head>
 <body>
+    <script type="text/javascript">
+        const audio = new Audio();
+        audio.src = "button.mp3";
+    </script>
     <div class="zoom"></div>
     <body onload="myFunction()" style="margin:0;">
         <div id="loader"></div>
@@ -85,7 +89,7 @@
             <div class="w3-container w3-center w3-animate-bottom">
             <h2>Ottoman Through Janissary Eyes</h2><br>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.OttomanThroughJanissaryEyes&hl=tr" target="_blank" style="color:red"><button class="button button1">Game Link</button></a><br>
+            <a href="https://play.google.com/store/apps/details?id=com.GrayWolfCompany.OttomanThroughJanissaryEyes&hl=tr" target="_blank" style="color:red"><button class="button button1" onclick="audio.play();">Game Link</button></a><br>
             <a href="https://www.youtube.com/watch?v=gHr-tieFubg" target="_blank" style="color:red"><button class="button button1">Gameplay Video</button></a><br>
             <div class="col-sm-4"><br>
                 <img src="ottoman1.webp" alt="ottoman1" style="width:100%" class="zoom">
