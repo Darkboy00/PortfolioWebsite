@@ -18,6 +18,15 @@
     <link rel="stylesheet" href="app.js">
 </head>
 <body>
+    <audio id="song" autoplay>
+        <source src="music.mp3">
+    </audio>
+    <script>
+        window.addEventListener('click', () => {
+            var audio = document.getElementById("song").play();
+            audio.volume = 0.1;
+        });
+    </script>
     <script type="text/javascript">
         const audio = new Audio();
         audio.src = "button.mp3";
