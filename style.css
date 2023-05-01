@@ -86,7 +86,9 @@ h2
 {
     font-size: 30px;
     font-weight: bolder;
-    background-color: #38ACEC;
+    background: linear-gradient(-45deg, #181719, #6e797c, #df6fb7, #d5d2eb);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite; 
     border-radius: 8px;
     box-shadow: 3px 3px 3px #ababab;
     margin-bottom: -10px;
@@ -179,23 +181,23 @@ img
 }
 @keyframes a
 {
-    0%{    box-shadow: 1px 1px 8px #E3FDFD, 
+    0%{box-shadow: 1px 1px 8px #E3FDFD, 
         2px 2px 8px #CBF1F5, 
         3px 3px 8px #A6E3E9, 
         4px 4px 8px #71C9CE;}
-    25%{    box-shadow: 1px 1px 12px #E3FDFD, 
+    25%{box-shadow: 1px 1px 12px #E3FDFD, 
         2px 2px 12px #CBF1F5, 
         3px 3px 12px #A6E3E9, 
         4px 4px 12px #71C9CE;}
-    50%{    box-shadow: 1px 1px 16px #E3FDFD, 
+    50%{box-shadow: 1px 1px 16px #E3FDFD, 
         2px 2px 16px #CBF1F5, 
         3px 3px 16px #A6E3E9, 
         4px 4px 16px #71C9CE;}
-    75%{    box-shadow: 1px 1px 20px #E3FDFD, 
+    75%{box-shadow: 1px 1px 20px #E3FDFD, 
         2px 2px 20px #CBF1F5, 
         3px 3px 20px #A6E3E9, 
         4px 4px 20px #71C9CE;}
-    100%{    box-shadow: 1px 1px 24px #E3FDFD, 
+    100%{box-shadow: 1px 1px 24px #E3FDFD, 
         2px 2px 24px #CBF1F5, 
         3px 3px 24px #A6E3E9, 
         4px 4px 24px #71C9CE;}
@@ -276,7 +278,6 @@ img
 }
 #loader 
 {
-    
     position: absolute;
     left: 50%;
     top: 50%;
