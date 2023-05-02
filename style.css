@@ -40,6 +40,12 @@
 	background-size: 400% 400%;
 	animation: gradient 5s ease infinite; 
 }
+.bg-8
+{
+    background: linear-gradient(-45deg, #5a0ad1, #050408, #272829, #5f5b5c);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite; 
+}
 .container-fluid
 {
     padding-top: 70px;
@@ -57,8 +63,8 @@
 }
 .navbar
 {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
@@ -171,6 +177,12 @@ img
     box-shadow: none;
     animation: none;
 }
+.img-2
+{
+    border-radius: 0px;
+    box-shadow: none;
+    animation: none;
+}
 @keyframes profile
 {
     0%{top:0px; box-shadow: 5px 5px 10px yellow;}
@@ -230,16 +242,13 @@ img
 }
 @keyframes gradient 
 {
-	0% 
-    {
+	0% {
 		background-position: 0% 50%;
 	}
-	50%
-    {
+	50% {
 		background-position: 100% 50%;
 	}
-	100% 
-    {
+	100% {
 		background-position: 0% 50%;
 	}
 }
@@ -278,6 +287,7 @@ img
     background: linear-gradient(-45deg, #117561, #36a97c, #3bd68d, #d5fed9);
 	background-size: 400% 400%;
 	animation: gradient 5s ease infinite; 
+    border-radius: 8px;
 }
 #loader 
 {
