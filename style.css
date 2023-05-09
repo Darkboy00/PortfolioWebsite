@@ -128,13 +128,18 @@ span
 }
 #section1{}
 #section2{}
+a:link
+{
+    color: black;
+}
 a:hover
 {
     color: white;
+    text-decoration: none;
 }
-a:visited
+a:active
 {
-    color: white;
+    color: grey;
 }
 .button1
 {
@@ -269,6 +274,10 @@ img
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
+}
+.btn1:hover
+{
+    animation:none;
 }
 .progress-bar
 {
